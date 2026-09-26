@@ -1,12 +1,17 @@
-import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Project';
+import Contact from './components/Contact';
 
-function App() {
+export default function App() {
   return (
-    <div className="portfolio">
-      <h1>Halo, Saya Zaki Mirza Victory</h1>
-      <p>Software Engineering Technology Student</p>
+    <div className="bg-slate-900 text-slate-100 min-h-screen font-sans selection:bg-blue-500 selection:text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
-
-export default App;
